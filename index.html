@@ -10,6 +10,16 @@
     <title>RCCG TCON</title>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YTR2W7WDHZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YTR2W7WDHZ');
+</script>
+
 <body>
     <header>
         <div class="nav">
@@ -29,22 +39,40 @@
             </div>
 
             <div class="nav-links" style="margin-top: 5px;">
-                <a href="#" target="_blank">About Us</a>
-                <a href="#" target="_blank">Our Services</a>
-                <a href="#" target="_blank">Volunteer</a>
-                <a href="#" target="_blank">Give</a>
-                <a href="#" target="_blank">Contact Us</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Our Services</a>
+                <a href="#directions">Directions</a>
+                <a href="#ginv">Get Involved</a>
+                <a href="#contact">Contact Us</a>
             </div>
         </div>
         <div class="header-text">
             <h1 class="head-text">A Place to call <span style="text-decoration: underline;">home</span></h1>
             <p class="head-desc">Join our growing, Christ-focused community in our Tuesday, Friday or Sunday Services.
             </p>
-            <a href="#"><button class="head-btn">Find out more</button></a>
+            <a href="#about"><button class="head-btn">Find out more</button></a>
         </div>
     </header>
 
-    <div class="services">
+    <div class="about" id="about">
+        <div class="abt-text">
+            <h2>Welcome to a <span class="grad">Family</span></h2>
+            <p>The Chapel Outreach Norwich is a Christian Church serving the Norwich community and seeking, engaging,
+                and encouraging others in their life-changing Christian journey.</p>
+            <br>
+            <p>We seek to be a loving, friendly community that worships God, and serves others. We place a high priority
+                on teaching from the Bible and following the example of Jesus.</p>
+            <br>
+            <p>Our vision is to impact and renew Norwich and beyond with the transforming message of Jesus Christ
+                through words and actions.</p>
+            <br>
+            <p>Come as you are - we'd love to get to know you.</p>
+
+        </div>
+        <img src="about-img.png" alt="" class="abt-img">
+    </div>
+
+    <div class="services" id="services">
         <h2 class="serv-htxt">Join our Weekly Services!</h2>
         <div class="cards">
             <div class="card c1">
@@ -72,25 +100,7 @@
         <a class="serv-dtxt" href="#"> See more of our upcoming services 🡪</a>
     </div>
 
-    <div class="about">
-        <div class="abt-text">
-            <h2>Welcome to a <span class="grad">Family</span></h2>
-            <p>The Chapel Outreach Norwich is a Christian Church serving the Norwich community and seeking, engaging,
-                and encouraging others in their life-changing Christian journey.</p>
-            <br>
-            <p>We seek to be a loving, friendly community that worships God, and serves others. We place a high priority
-                on teaching from the Bible and following the example of Jesus.</p>
-            <br>
-            <p>Our vision is to impact and renew Norwich and beyond with the transforming message of Jesus Christ
-                through words and actions.</p>
-            <br>
-            <p>Come as you are - we'd love to get to know you.</p>
-
-        </div>
-        <img src="about-img.png" alt="" class="abt-img">
-    </div>
-
-    <div class="directions">
+    <div class="directions" id="directions">
         <div class="dir-text">
             <h2>Come find us!</h2>
             <div class="dir-big">
@@ -111,7 +121,7 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-    <div class="ginv">
+    <div class="ginv" id="ginv">
         <h2 class="ginv-htxt">Get Involved</h2>
         <br>
       <div class="main-text">
@@ -131,38 +141,38 @@
     </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="con-items">
         <div class="contact-text">
             <h2 class="con-head">Contact Us</h2>
         <p>Use our contact form to send us any queries, requests or messages!</p>
-        <p>Or alternatively, contact us using the platforms below:</p>
+        <p class="con-last">Or alternatively, contact us using the platforms below:</p>
 
         <div class="c-plat">
-            <img src="" alt="">
+            <img src="Facebook-icon.svg" alt="">
             <h3>Facebook</h3>
-            <p></p>
-
-            <img src="" alt="">
-            <h3>Facebook</h3>
-            <p></p>
-
-            <img src="" alt="">
-            <h3>Facebook</h3>
-            <p></p>
+            <a href="https://facebook.com/rccgtcon"><p>facebook.com/rccgtcon</p></a>
+            <br>
+            <img src="email-icon.svg" alt="">
+            <h3>Email</h3>
+            <a href="mailto:church@rccgtcon.com"> <p>church@rccgtcon.com</p></a>
+            <br>
+            <img src="phone-number.svg" alt="">
+            <h3>Phone Number</h3>
+            <a href="tel:+447578487706"><p>07578 487706</p></a>
         </div>
         </div>
 
         <form name="contact" method="POST" data-netlify="true">
             <input type="hidden" name="subject" 
             value="New contact form submission from rccgtcon.com" />
-              <label>Name</label><br> <input type="text" name="name" required/>
+              <label>Name</label><br> <input type="text" name="name" placeholder="John Doe" required/>
               <br>
-              <label>Email</label><br> <input type="email" name="email" required/>
+              <label>Email</label><br> <input type="email" name="email" placeholder="johndoe@gmail.com" required/>
               <br>
-              <label>Phone Number </label><br> <input type="tel" name="number" required/>
+              <label>Phone Number </label><br> <input type="tel" name="number" placeholder="+44 7777 888888" required/>
               <br>
-              <label>Message </label><br> <textarea name="message" required></textarea>
+              <label>Message </label><br> <textarea name="message" placeholder="Your Message" required style="resize: none;"></textarea>
               <br>
               <button type="submit">Submit</button>
 
@@ -171,7 +181,7 @@
     </div>
     </div>
     <footer>
-      
+      <p>© 2022 -  The Redeemed Christian Church of God, The Chapel Outreach Norwich | Charity Commission No. 1158788 </p>
         
     </footer>
 </body>
