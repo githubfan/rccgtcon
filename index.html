@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="rccglogo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>RCCG TCON</title>
 </head>
@@ -14,8 +15,9 @@
         <div class="nav">
             <input type="checkbox" id="nav-check">
             <div class="nav-header">
+                <img src="rccglogo.png" alt="" width="40px" style="padding: 10px;">
                 <div class="nav-title" style="margin-top: 2.5px;">
-                    The Chapel Outreach Norwich
+              RCCG The Chapel Outreach Norwich
                 </div>
             </div>
             <div class="nav-btn">
@@ -47,7 +49,7 @@
         <div class="cards">
             <div class="card c1">
                 <h3>Sunday Service</h3>
-                <p>Join our Sunday Service, where we worship, pray and learn together weekly.</p>
+                <p>Join our Sunday Service, where we worship, pray and learn together.</p>
                 <br>
                 <p>Starts at 1PM.</p>
                 <button>More Info</button>
@@ -128,6 +130,49 @@
         </div>
     </div>
     </div>
+
+    <div class="contact">
+        <div class="con-items">
+        <div class="contact-text">
+            <h2 class="con-head">Contact Us</h2>
+        <p>Use the form to the right to send us any queries, requests or messages!</p>
+        <p>Or alternatively, contact us using the platforms below:</p>
+        </div>
+
+        <form name="contact" method="POST" data-netlify="true">
+              <label>Name</label><br> <input type="text" name="name" />
+              <br>
+              <label>Email</label><br> <input type="email" name="email" />
+              <br>
+              <label>Phone Number </label><br> <input type="email" name="number" />
+              <br>
+              <label>Message </label><br> <textarea name="message"></textarea>
+              <br>
+              <button type="submit">Submit</button>
+
+            </p>
+          </form>
+    </div>
+    </div>
+    <footer>
+      
+        
+    </footer>
+
+    <!-- Start of Woopra Code -->
+<script>
+    !function(){var t,o,c,e=window,n=document,r=arguments,a="script",i=["call","cancelAction","config","identify","push","track","trackClick","trackForm","update","visit"],s=function(){var t,o=this,c=function(t){o[t]=function(){return o._e.push([t].concat(Array.prototype.slice.call(arguments,0))),o}};for(o._e=[],t=0;t<i.length;t++)c(i[t])};for(e.__woo=e.__woo||{},t=0;t<r.length;t++)e.__woo[r[t]]=e[r[t]]=e[r[t]]||new s;(o=n.createElement(a)).async=1,o.src="https://static.woopra.com/js/w.js",(c=n.getElementsByTagName(a)[0]).parentNode.insertBefore(o,c)}("woopra");
+  
+    woopra.config({
+      domain: "rccgtcon.com",
+      outgoing_tracking: true,
+      download_tracking: true,
+      click_tracking: true
+    });
+    
+    woopra.track();
+  </script>
+  <!-- End of Woopra Code -->
 </body>
 
 </html>
