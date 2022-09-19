@@ -4,10 +4,11 @@
 
 * {
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #f9fcff;
+    background-color: #dee6ef;
 }
 
 header {
@@ -58,7 +59,7 @@ header {
     color: #efefef;
 }
 
-.nav>.nav-links>a:hover {
+.nav>.nav-links>a:hover::before {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -357,6 +358,12 @@ header {
     form {
         width: 100%;
     }
+
+    .contact-text {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 .ginv {
@@ -379,6 +386,11 @@ header {
 }
 
 @media only screen and (min-width: 1090px) {
+
+    .contact-text {
+        width: 50%;
+        margin-right: 40px;
+    }
 
 .worker {
     margin-right: 40px;
@@ -419,6 +431,7 @@ form {
 .contact {
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 80px;
     padding: 30px;
 }
 
@@ -433,14 +446,13 @@ form {
     margin-bottom: 20px;
 }
 
-.contact-text {
-    width: 50%;
-    margin-right: 40px;
-}
-
 .contact-text > p {
     font-family: 'DM Sans', sans-serif;
     margin-bottom: 10px;
+}
+
+.con-last {
+    padding-bottom: 16px;
 }
 
 button {
@@ -482,4 +494,41 @@ input {
 
 textarea {
     height: 150px;
+}
+
+.c-plat > img {
+    width: 40px;
+}
+
+.c-plat > h3 {
+    font-family: 'Manrope', sans-serif;
+    margin-top: 8px;
+}
+
+.c-plat > a > p {
+    font-family: 'DM Sans', sans-serif;
+    color: #121C4A;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.c-plat > a {
+    text-decoration: none;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'DM Sans', sans-serif;
+}
+
+footer {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    border-top: 1px solid black;
+    background: #ebf0f6;
+}
+
+footer > p {
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
