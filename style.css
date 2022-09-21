@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #dee6ef;
+    background: linear-gradient(180deg, #d3d7e8, #ebf0f6);
 }
 
 header {
@@ -161,6 +161,11 @@ header {
     cursor: pointer;
 }
 
+.services {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
 .cards {
     color: white;
     text-align: center;
@@ -215,15 +220,13 @@ header {
 }
 
 .serv-htxt {
-    margin-top: 25px;
+    margin-top: 100px;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 27px;
     font-weight: 700;
-    margin-left: 80px;
 }
 
 .serv-dtxt {
-    margin-left: 80px;
     font-family: 'Manrope', sans-serif;
     color: #213175;
     font-weight: 500;
@@ -280,7 +283,8 @@ header {
     margin-left: 40px;
     margin-right: 40px;
     padding: 30px;
-    margin-top: 25px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .dir-text {
@@ -320,13 +324,9 @@ header {
         text-align: center;
     }
 
-    .serv-htxt, .abt-txt, .serv-dtxt, .contact {
+    .abt-txt, .serv-dtxt, .contact {
         text-align: center;
         margin-left: 0;
-    }
-
-    .services {
-        text-align: center;
     }
 
     .dir-big {
@@ -370,7 +370,8 @@ header {
     margin-left: 40px;
     margin-right: 40px;
     padding: 30px;
-    margin-top: 25px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .ginv > .main-text {
@@ -431,7 +432,7 @@ form {
 .contact {
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
     padding: 30px;
 }
 
@@ -498,22 +499,23 @@ textarea {
 
 .c-plat > img {
     width: 40px;
+    margin-top: 20px;
 }
 
 .c-plat > h3 {
     font-family: 'Manrope', sans-serif;
     margin-top: 8px;
+    margin-bottom: 5px;
 }
 
-.c-plat > a > p {
+
+.c-plat > a {
+    text-decoration: none;  
     font-family: 'DM Sans', sans-serif;
     color: #121C4A;
     margin-top: 8px;
     margin-bottom: 8px;
-}
-
-.c-plat > a {
-    text-decoration: none;
+    font-size: 16px;
 }
 
 input::placeholder, textarea::placeholder {
@@ -524,7 +526,7 @@ footer {
     text-align: center;
     font-family: 'DM Sans', sans-serif;
     border-top: 1px solid black;
-    background: #ebf0f6;
+    /* background: linear-gradient(180deg, #d3d7e8, #ebf0f6); */
 }
 
 footer > p {
