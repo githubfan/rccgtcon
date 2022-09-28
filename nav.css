@@ -1,106 +1,225 @@
-/* nav code*/
-.nav {
-    height: 60px;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    color: white;
+	font-family: 'DM Sans', sans-serif;
+    height: 70px;
     width: 100%;
+    padding: 19px;
     background-color: #121C4A;
     position: relative;
 }
 
-.nav>.nav-header {
+.navbar .nav-header {
+    display: inline;
+}
+
+.navbar .nav-header .nav-logo {
     display: inline-flex;
+    justify-content: center;
     align-items: center;
 }
 
-.nav>.nav-header>.nav-title {
-    display: inline-block;
-    font-size: 22px;
-    font-weight: 600;
-    font-family: 'Red Hat Display', sans-serif;
-    color: #fff;
-    padding: 10px 10px 10px 10px;
-}
-
-.nav>.nav-btn {
-    display: none;
-}
-
-.nav>.nav-links {
+.navbar .nav-links {
     display: inline;
     float: right;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
 }
 
-.nav>.nav-links>a {
+.navbar .nav-links .bookBtn {
     display: inline-block;
-    font-weight: 500;
-    padding: 13px 30px 13px 10px;
+    padding: 5px 15px;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+.navbar .nav-links a {
+    padding: 10px 25px;
     text-decoration: none;
-    color: #efefef;
+    font-weight: 500;
+    color: white;
 }
 
-.nav>.nav-links>a:hover::before {
-    background-color: rgba(0, 0, 0, 0.3);
+/* Hover effects */
+.navbar .nav-links  a:hover {
+    transition: 0.5s ease;
+    color: #2A84EE;
 }
 
-.nav>#nav-check {
+
+/* responsive navbar toggle button */
+.navbar #nav-check,
+.navbar .nav-btn {
     display: none;
 }
 
 @media (max-width:1088px) {
-    .nav>.nav-btn {
+    .navbar .nav-btn {
         display: inline-block;
         position: absolute;
-        right: 0px;
         top: 0px;
+        right: 0px;
     }
 
-    .nav>.nav-header>.nav-title {
-        font-size: 14px;
-        padding-left: 0px;
-    }
-
-    .nav-header>.img {
-        padding-left: 0px;
-    }
-
-    .nav>.nav-btn>label {
+    .navbar .nav-btn label {
         display: inline-block;
-        width: 50px;
-        height: 50px;
-        padding-top: 15px;
+        width: 80px;
+        height: 70px;
+        padding: 19px;
     }
 
-    .nav>.nav-btn>label>span {
+    .navbar .nav-btn label span {
         display: block;
-        width: 30px;
         height: 10px;
-        border-top: 2px solid #eee;
+        width: 25px;
+        border-top: 3px solid white;
     }
 
-    .nav>.nav-links {
+    .navbar .nav-btn label:hover,
+    .navbar #nav-check:checked~.nav-btn label {
+        transition: all 0.5s ease;
+    }
+
+    .navbar .nav-links {
         position: absolute;
         display: block;
+        text-align: center;
         width: 100%;
-        background-color: #333;
-        height: 0px;
+        background-color: #121C4A;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
-        top: 50px;
+        top: 70px;
+        right: 0px;
+    }
+
+    .navbar .nav-links a {
+        display: block;
+        padding: 1.75em;
+    }
+
+    /* when nav toggle button not checked */
+    .navbar #nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    /* when nav toggle button is checked */
+    .navbar #nav-check:checked~.nav-links {
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    .navbar .nav-links .bookBtn {
+        padding: 10px 40px;
+        margin: 20px;
+        font-size: 18px;
+        font-weight: normal;
+        color: rgb(9, 14, 90);
+    }
+
+    /* Responsive dropdown code */
+    .navbar .nav-links .dropdown,
+    .navbar .nav-links .dropdown2 {
+        float: none;
+        width: 100%;
+    }
+
+    .navbar .nav-links .drop-content,
+    .navbar .nav-links .drop-content2 {
+        position: relative;
+        background-color: #004785;
+        top: 0px;
         left: 0px;
     }
 
-    .nav>.nav-links>a {
-        display: block;
-        width: 100%;
+    /* Text color */
+    .navbar .nav-links .drop-content a {
+        color: white;
     }
 
-    .nav>#nav-check:not(:checked)~.nav-links {
-        height: 0px;
+    /* fix button padding */
+
+    .bookBtn > a {
+        padding: 1em;
     }
 
-    .nav>#nav-check:checked~.nav-links {
-        height: calc(100vh - 50px);
-        overflow-y: auto;
+}
+
+.logo-txt {
+    margin-top: -17px; font-size: 18px; font-weight: 600;
+}
+
+@media (max-width: 470px) {
+    .logo-txt {
+        font-size: 12px;
     }
 }
+
+/* Dropdown menu CSS code */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-content,
+.drop-content2 {
+    display: none;
+    position: absolute;
+    background-color: #121C4A;
+    width: 100%;
+    font-size: 16px;
+    top: 2em;
+    z-index: 1;
+    box-shadow: 0px 10px 25px #121C4A;
+    border-radius: 15px;
+    padding: 0.5em;
+}
+
+/* on hover show dropdown */
+.dropdown:hover .drop-content,
+.dropdown2:hover .drop-content2 {
+    display: block;
+}
+
+/* drondown links */
+.drop-content a {
+    padding: 12px 10px;
+    display: block;
+    transition: all 0.5s ease !important;
+}
+
+.dropBtn .drop-content a:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+
+.dropdown2 .drop-content2 {
+    position: absolute;
+    left: 120px;
+    top: 126px;
+}
+
+.dropBtn {
+    margin-bottom: 1em;
+}
+
+.dropBtn2 i {
+    margin-left: 15px;
+}
+
+.bookBtn {
+    border-radius: 15px;
+    padding: 0.5em;
+    background: none;
+    font-family: 'Space Grotesk', sans-serif;
+    border: 2px solid #004785;
+}
+
+
