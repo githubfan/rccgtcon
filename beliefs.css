@@ -1,0 +1,85 @@
+header {
+    height: 100vh;
+    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--F7w_snYb--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vda3askm2sbfjl717q9q.png);
+    background-size: cover;
+}
+
+.text > h1 {
+    text-transform: uppercase;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 30vh;
+    color: white;
+}
+
+.serv-text {
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 100px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    border-top: 1px solid black;
+    /* background: linear-gradient(180deg, #d3d7e8, #ebf0f6); */
+}
+
+footer > p {
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.panel > p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.accordion {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+}
+
+.accordion {
+    background-color: #503B7C;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #916FDA;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
