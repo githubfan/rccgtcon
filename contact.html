@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="rccglogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>RCCG TCON</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YTR2W7WDHZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YTR2W7WDHZ');
+    </script>
+
+    <!-- Microsoft Clarity Code (Analytics) -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "dw5f2vozqv");
+    </script>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+        <!-- Navbar logo -->
+        <div class="nav-header">
+            <div class="nav-logo">
+                <img alt="logo" src="rccglogo.png" width="50" style="margin-top: -12px; margin-right: 15px;">
+                <a class="logo-txt" href="/">
+                    RCCG The Chapel Outreach Norwich</a>
+            </div>
+        </div><!-- responsive navbar toggle button -->
+        <input id="nav-check" type="checkbox">
+        <div class="nav-btn">
+            <label for="nav-check"><span></span> <span></span> <span></span></label>
+        </div><!-- Navbar items -->
+        <div class="nav-links">
+            <!-- Dropdown menu -->
+            <div class="dropdown">
+                <a class="dropBtn" href="/about">About Us <i class="fas fa-angle-down"></i></a>
+                <div class="drop-content">
+                    <a href="/beliefs" >Our Beliefs</a> <a href="/mission">Our Mission</a>
+                </div>
+            </div>
+
+            <a href="/services">Our Services</a>
+            <a href="/volunteer">Volunteer</a>
+            <a href="/give">Give</a>
+            <a href="/contact">Contact Us</a>
+
+
+        </div>
+    </div>
+    <div class="text">
+      <h1>Contact Us</h1>
+  </div>
+</header>
+
+  <div class="contact" id="contact">
+    <div class="con-items">
+    <div class="contact-text">
+        <h2 class="con-head">Contact Us</h2>
+    <p>Use our contact form to send us any queries, requests or messages!</p>
+    <p class="con-last">Or alternatively, contact us using the platforms below:</p>
+
+    <div class="c-plat">
+        <img src="Facebook-icon.svg" alt="">
+        <h3>Facebook</h3>
+        <a href="https://facebook.com/rccgtcon">facebook.com/rccgtcon</a>
+        <br>
+        <img src="email-icon.svg" alt="">
+        <h3>Email</h3>
+        <a href="mailto:church@rccgtcon.com">church@rccgtcon.com</a>
+        <br>
+        <img src="phone-number.svg" alt="">
+        <h3>Phone Number</h3>
+        <a href="tel:+447578487706">07578 487706</a>
+    </div>
+    </div>
+
+    <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="subject" 
+        value="New contact form submission from rccgtcon.com" />
+          <label>Name</label><br> <input type="text" name="name" placeholder="John Doe" required/>
+          <br>
+          <label>Email</label><br> <input type="email" name="email" placeholder="johndoe@gmail.com" required/>
+          <br>
+          <label>Phone Number </label><br> <input type="tel" name="number" placeholder="+44 7777 888888" required/>
+          <br>
+          <label>Message </label><br> <textarea name="message" placeholder="Your Message" required style="resize: none;"></textarea>
+          <br>
+          <button type="submit">Submit</button>
+
+        </p>
+      </form>
+</div>
+</div>
+<footer>
+  <p>© 2022 -  The Redeemed Christian Church of God, The Chapel Outreach Norwich | Charity Commission No. 1158788 </p>
+    
+</footer>
+</body>
+</html>

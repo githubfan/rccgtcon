@@ -1,0 +1,128 @@
+.contact {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 90px;
+    padding: 30px;
+}
+
+.con-items {
+    display: flex;
+}
+  
+.con-head {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-text > p {
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.con-last {
+    padding-bottom: 16px;
+}
+
+button {
+    background: #625CC9;
+    border: none;
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input, textarea {
+    background: #FFFFFF;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+border: none;
+padding: 10px;
+    width: 100%;
+}
+
+label {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 150px;
+}
+
+.c-plat > img {
+    width: 40px;
+    margin-top: 20px;
+}
+
+.c-plat > h3 {
+    font-family: 'Manrope', sans-serif;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+
+.c-plat > a {
+    text-decoration: none;  
+    font-family: 'DM Sans', sans-serif;
+    color: #121C4A;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'DM Sans', sans-serif;
+}
+
+footer {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    border-top: 1px solid black;
+    /* background: linear-gradient(180deg, #d3d7e8, #ebf0f6); */
+}
+
+footer > p {
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+header {
+    height: 100vh;
+    background-image: url(https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/12/Gradient_builder_2.jpg?auto=format&q=60&w=1815&h=1200&fit=crop&crop=faces);
+    background-size: cover;
+}
+
+.text > h1 {
+    text-transform: uppercase;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 30vh;
+}
+
+.serv-text {
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 25px;
+    font-family: 'Red Hat Display', sans-serif;
+}
