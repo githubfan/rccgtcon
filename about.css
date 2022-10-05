@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+header {
+    height: 100vh;
+    background-image: url(https://t4.ftcdn.net/jpg/02/67/40/21/360_F_267402109_jZvsqRQUvSxohAOmcUt549jlapqoRHM0.jpg);
+    background-size: cover;
+}
+
+.text {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+}
+
+.sub-txt{
+    margin-top: 1em;
+}
+
+.head-txt {
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 30vh;
+}
+
+.content {
+    padding: 1em;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main-text {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.content h2 {
+    margin-top: 50px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.content p, .content a{
+    margin: 1em;
+    text-decoration: none;
+}
