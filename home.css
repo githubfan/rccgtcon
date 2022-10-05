@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(180deg, #d3d7e8, #ebf0f6);
+    /* background: linear-gradient(180deg, #d3d7e8, #ebf0f6); */
 }
 
 header {
@@ -17,6 +17,7 @@ header {
     background-size: cover;
     background-image: url(Headerimg.png);
 }
+
 
 .header-text {
     text-align: center;
@@ -178,6 +179,12 @@ header {
     padding: 30px;
     margin-top: 70px;
     margin-bottom: 70px;
+}
+
+.dir-text > p > a {
+    font-weight: 500;
+    color: #121C4A;
+    text-decoration: none;
 }
 
 .dir-text {
