@@ -1,0 +1,133 @@
+header {
+    height: 100vh;
+    background-image: url(https://t4.ftcdn.net/jpg/02/67/40/21/360_F_267402109_jZvsqRQUvSxohAOmcUt549jlapqoRHM0.jpg);
+    background-size: cover;
+}
+
+.text {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+}
+
+.sub-txt{
+    margin-top: 1em;
+}
+
+.head-txt {
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 30vh;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    border-top: 1px solid black;
+    /* background: linear-gradient(180deg, #d3d7e8, #ebf0f6); */
+}
+
+footer>p {
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+button {
+    background: #625CC9;
+    border: none;
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input[type=text], input[type=email], input[type=tel],
+textarea {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 70%;
+}
+
+input[type=checkbox] {
+    accent-color: #ECC8B1;
+}
+
+label {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 150px;
+}
+
+.contact {
+    padding: 1em;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.content {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main-text {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.content h2 {
+    margin-top: 50px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.content p, .content a{
+    margin: 1em;
+    text-decoration: none;
+}
+
+.content a {
+    color: #121C4A;
+}
+
+.main-text > p:last-child {
+    margin-bottom: 30px;
+}
+
+.checkboxes {
+    text-align: center;
+}
+
+@media (max-width: 1088px) {
+    .contact {
+        width: 90%;
+    }
+}

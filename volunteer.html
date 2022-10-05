@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="rccglogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="ginv.css">
+    <title>RCCG TCON</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YTR2W7WDHZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YTR2W7WDHZ');
+</script>
+    <!-- Microsoft Clarity Code (Analytics) -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+          c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+          t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+          y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "dw5f2vozqv");
+  </script>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <!-- Navbar logo -->
+        <div class="nav-header">
+            <div class="nav-logo">
+                <img alt="logo" src="rccglogo.png" width="50" style="margin-top: -12px; margin-right: 15px;">
+                <a class="logo-txt" href="/">
+                    RCCG The Chapel Outreach Norwich</a>
+            </div>
+        </div><!-- responsive navbar toggle button -->
+        <input id="nav-check" type="checkbox">
+        <div class="nav-btn">
+            <label for="nav-check"><span></span> <span></span> <span></span></label>
+        </div><!-- Navbar items -->
+        <div class="nav-links">
+            <!-- Dropdown menu -->
+            <div class="dropdown">
+                <a class="dropBtn" href="/about">About Us <i class="fas fa-angle-down"></i></a>
+                <div class="drop-content">
+                    <a href="/beliefs" >Our Beliefs</a> <a href="/mission">Our Mission</a>
+                </div>
+            </div>
+
+            <a href="/services">Our Services</a>
+            <a href="/volunteer">Volunteer</a>
+            <a href="/give">Give</a>
+            <a href="/contact">Contact Us</a>
+
+
+        </div>
+    </div>
+    <div class="text">
+      <h1 class="head-txt">Get Involved</h1>
+      <h2 class="sub-txt">Volunteering</h2>
+    </div>
+</header>
+
+<div class="content">
+<div class="main-text">
+    <h2>Become a Worker</h2>
+    <p>Do you want to use the gifts and talent God has given you to serve in the Church? We have various departments for you to choose from!</p>
+    <p>Please use the form below to submit your application.</p>
+</div>
+
+<form name="contact" method="POST" data-netlify="true" class="contact">
+    <input type="hidden" name="subject" 
+    value="New workers form submission from rccgtcon.com" />
+      <label>Name</label><br> <input type="text" name="name" placeholder="John Doe" required/>
+      <br>
+      <label>Email</label><br> <input type="email" name="email" placeholder="johndoe@gmail.com" required/>
+      <br>
+      <label>Phone Number </label><br> <input type="tel" name="number" placeholder="+44 7777 888888" required/>
+      <br>
+      <label>What departments would you like to help out in?</label> <br>
+      <div class="checkboxes">
+      <input type="checkbox" id="item1" name="Children" value="Children's Church">
+      <label for="item1">Children's Church</label><br>
+      <input type="checkbox" id="item2" name="Multimedia" value="Multimedia and IT">
+      <label for="item2">Multimedia and IT</label><br>
+      <input type="checkbox" id="item3" name="Choir" value="Choir">
+      <label for="item3">Choir</label><br>
+       <input type="checkbox" id="item4" name="Men" value="Men's Ministry">
+      <label for="item4">Men's Ministry</label><br>
+         <input type="checkbox" id="item5" name="Women" value="Women's Ministry">
+      <label for="item5">Women's Ministry</label><br>
+         <input type="checkbox" id="item6" name="Sunday" value="Sunday School">
+      <label for="item6">Sunday School</label><br>
+         <input type="checkbox" id="item7" name="Welfare" value="Welfare">
+      <label for="item7">Welfare</label><br>
+         <input type="checkbox" id="item8" name="Evangelism" value="Evangelism">
+      <label for="item8">Evangelism</label><br>
+         <input type="checkbox" id="item9" name="Ushering" value="Ushering">
+      <label for="item9">Ushering </label><br>
+         <input type="checkbox" id="item10" name="Other" value="Other">
+      <label for="item10">Other</label><br> 
+    </div>
+    <label>If you selected other, please let us know which department you'd like to help in:</label><br> <input type="text" name="otherdept"/>
+<br>
+      <label>Why would you like to help in your selected department(s)? </label><br> <textarea name="Why" required style="resize: none;"></textarea>
+      <br>
+      <br>
+
+      <label>What days in the week are you free to help?</label><br> 
+      <input type="checkbox" id="wkd1" name="Monday" value="Monday">
+      <label for="wkd1">Monday</label><br>
+      <input type="checkbox" id="wkd2" name="Tuesday" value="Tuesday">
+      <label for="wkd2">Tuesday</label><br>
+      <input type="checkbox" id="wkd3" name="Wednesday" value="Wednesday">
+      <label for="wkd3">Wednesday</label><br>
+       <input type="checkbox" id="wkd4" name="Thursday" value="Thursday">
+      <label for="wkd4">Thursday</label><br>
+         <input type="checkbox" id="wkd5" name="Friday" value="Friday">
+      <label for="wkd5">Friday</label><br>
+         <input type="checkbox" id="wkd6" name="Saturday" value="Saturday">
+      <label for="wkd6">Saturday</label><br>
+         <input type="checkbox" id="wkd7" name="Sunday" value="Sunday">
+      <label for="wkd7">Sunday</label><br>
+<br><br>
+      <label>Is there anything we need to know if you get into your selected department?</label><br> <textarea name="Extra info" style="resize: none;"></textarea>
+      <br>
+      <button type="submit">Submit</button>
+
+
+  </form>
+</div>
+
+<footer>
+  <p>© 2022 -  The Redeemed Christian Church of God, The Chapel Outreach Norwich | Charity Commission No. 1158788 </p>   
+</footer>
+
+
+
+</body>
+</html>
