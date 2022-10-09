@@ -137,19 +137,20 @@ header {
 }
 
 .about {
-    display: flex;
+    text-align: center;
+    /* display: flex; */
     margin-left: 70px;
     margin-right: 70px;
     margin-top: 50px;
     min-height: 50vh;
 }
 
-.abt-txt {
+.abt-text {
     display: inline-block;
-    margin-right: 30px;
-}
+margin: 1em;}
 
 .abt-img {
+    margin-top: 1em;
     width: 50%;
 }
 
@@ -224,7 +225,7 @@ header {
         text-align: center;
     }
 
-    .abt-txt, .serv-dtxt, .contact {
+    .abt-text, .serv-dtxt, .contact {
         text-align: center;
         margin-left: 0;
     }
