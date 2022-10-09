@@ -98,6 +98,11 @@
 
 
 @media (max-width: 1088px) {
+
+  .serv-text {
+    text-align: center;
+  }
+  
   .tab-info {
     flex-direction: column;
   }
