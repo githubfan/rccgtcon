@@ -1,0 +1,14 @@
+header {
+    height: 100vh;
+    background: linear-gradient(90deg, #FF9551 1.32%, #5E2DC4 94.07%);
+}
+
+.text > h1 {
+    text-transform: uppercase;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 30vh;
+}
