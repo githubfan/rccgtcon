@@ -12,3 +12,17 @@ header {
     font-weight: 700;
     margin-top: 30vh;
 }
+
+.content {
+    padding: 4em;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main-text {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main-text > h2 {
+    color: #213175;
+}
