@@ -10,8 +10,10 @@
 header {
     color: white;
     height: 100vh;
+    background-position: center;
     background-size: cover;
-    background-image: url(Headerimg.png);
+    background-image: url(photos/header_image_final.png);
+
 }
 
 
@@ -32,6 +34,8 @@ header {
     font-family: 'DM Sans', sans-serif;
     margin-top: 70px;
     font-weight: 500;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .head-btn {
