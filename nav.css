@@ -225,3 +225,8 @@
 }
 
 
+/* not nav but reused multiple times */
+.att {
+    padding: 0.5em;
+    font-style: italic;
+}
